@@ -7,3 +7,35 @@ body {
 .App {
   text-align: center;
 }
+
+.dropzone{
+	border-width: 4px;
+	border-radius: 7px;
+	border-color: #ccc;
+	text-align: center;
+	padding: 3%;
+	cursor: pointer;
+}
+
+.header{
+	text-align: center;
+	font-weight: 1000;
+	font-size: 220%;
+
+}
+
+.submit, .result{
+	text-align: center;
+}
+
+.content{
+}
+
+.footer {
+	font-size: 70%;
+	text-align: center;
+}
+
+.faint_ground{
+	background: #f1f0f0
+}
