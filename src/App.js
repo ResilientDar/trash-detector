@@ -6,7 +6,7 @@ import './assembly.min.css'
 import './assembly.js'
 import loading from './loading.gif'
 
-const UPLOAD_URL = 'https://138.197.5.83:5000/api/v1/detect';
+const UPLOAD_URL = 'http://138.197.5.83:5000/api/v1/detect';
 
 export default class App extends React.Component {
   constructor(props) {
