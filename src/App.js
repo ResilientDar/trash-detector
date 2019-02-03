@@ -79,7 +79,7 @@ export default class App extends React.Component {
         <div className="col--2">
         </div>
         <div className="header col--8 ">
-        <h1> Trash Detection </h1>
+        <h1> Trash Detector </h1>
 
         </div>
         <div className="col--2">

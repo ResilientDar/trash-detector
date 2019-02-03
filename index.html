@@ -3,11 +3,10 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Trash Detection App</title>
+    <title>Trash Detector App</title>
   </head>
   <body>
     <div id="root"></div>
-    <script src='https://api.mapbox.com/mapbox-assembly/mbx/v0.18.0/assembly.js'></script>
     <!--
       This HTML file is a template.
       If you open it directly in the browser, you will see an empty page.
@@ -20,7 +19,7 @@
     -->
   </body>
   <!-- Force using HTTP, no support for HTTPS on api server for now! -->
-  <script> 
+  <script>
     if (location.protocol != 'http:')
     {
       location.href = 'http:' + window.location.href.substring(window.location.protocol.length);
