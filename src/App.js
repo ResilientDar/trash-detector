@@ -124,12 +124,12 @@ export default class App extends React.Component {
         </div>
         <div className="col--2">
         {this.state.loading? <img className="mt24" src={loading}/> : ""}
-        {this.state.result === null ? null :
+        {this.state.result && !this.state.loading &&
           <div>
-            <h3 className="content mb6"> <span className="align-center">Content </span></h3>
+            <h3 className="content mb6"> <span className="align-center"></span></h3>
             {this.state.result.data.trash_present?
              <div> 
-             <h4 className="txt-bold center"> TRASH FOUND</h4>
+             <h2 className="txt-bold center txt-h2 mb12"> TRASH FOUND </h2>
              <span className="txt-bold"> Approximate Trash area: </span>
 
              <span>{this.state.result.data.trash_area / 10000} square metre </span> <br></br>
@@ -137,7 +137,7 @@ export default class App extends React.Component {
              <span> {this.state.result.time} </span>
              {/*<h4 className="fl"> Result Image url: {this.state.result.data.output_image_link} </h4> */}
              </div>:
-            <h4 className="txt-bold"> NO TRASH FOUND </h4> }
+            <h2 className="txt-bold txt-h2 mb12"> NO TRASH FOUND </h2> }
           </div>
         }
         </div>
