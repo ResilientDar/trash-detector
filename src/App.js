@@ -75,7 +75,7 @@ export default class App extends React.Component {
   render() {
     return (
       <div>
-      <div className="grid mt24 mb60">
+      <div className="grid mt24 mb36">
         <div className="col--2">
         </div>
         <div className="header col--8 ">
@@ -117,7 +117,9 @@ export default class App extends React.Component {
         {this.state.uploadedFile === null ? null :
           <div >
             <h3 className="mb6 text-bold"> Uploaded Image</h3>
-            <img className="col--9" src={this.state.uploadedFile.preview} />
+            <div className="imgbox">
+            <img className="col--9 center-fit" src={this.state.uploadedFile.preview} />
+            </div>
           </div>}
         </div>
         <div className="col--2">
@@ -130,8 +132,8 @@ export default class App extends React.Component {
              <h4 className="txt-bold center"> TRASH FOUND</h4>
              <span className="txt-bold"> Approximate Trash area: </span>
 
-             <span>{this.state.result.data.trash_area} </span> <br></br>
-             <span className="txt-bold"> Total time taken:</span>
+             <span>{this.state.result.data.trash_area / 10000} square metre </span> <br></br>
+             <span className="txt-bold"> Total processing time:</span>
              <span> {this.state.result.time} </span>
              {/*<h4 className="fl"> Result Image url: {this.state.result.data.output_image_link} </h4> */}
              </div>:
