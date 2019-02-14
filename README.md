@@ -1,2 +1,2 @@
-# react-cloudinary
-Image Upload and Manipulation with React
+# Trash Detector
+Interface for the Image trash analysis API
